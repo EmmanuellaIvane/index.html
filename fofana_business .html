@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOFANA BUSINESS - Formations & Solutions Business en Afrique</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#FFC72C',
+                            dark: '#080C14',
+                            card: '#121826',
+                            border: '#232D42',
+                            accent: '#10B981',
+                            orange: '#F97316'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #080C14;
+            color: #F3F4F6;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF099 0%, #FFC72C 50%, #D89800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, #FFC72C 0%, #E0A000 100%);
+            color: #080C14;
+            font-weight: 700;
+            box-shadow: 0 4px 20px rgba(255, 199, 44, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 199, 44, 0.45);
+        }
+        .glass-card {
+            background: rgba(18, 24, 38, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(255, 199, 44, 0.35);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-brand-gold selection:text-brand-dark">
+
+    <!-- BARRE DE NOTIFICATION TOP -->
+    <div class="bg-gradient-to-r from-amber-600 via-brand-gold to-orange-600 text-brand-dark font-bold text-xs md:text-sm py-2 px-4 text-center flex justify-center items-center gap-2 shadow-lg">
+        <i class="fa-solid fa-bolt animate-bounce"></i>
+        <span>FOFANA BUSINESS : Paiement Mobile Money & International en Monnaie Locale — Accès Immédiat !</span>
+    </div>
+
+    <!-- EN-TÊTE / NAVBAR -->
+    <header class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- LOGO -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-gold to-brand-orange flex items-center justify-center text-brand-dark font-black text-2xl shadow-lg group-hover:scale-105 transition-transform">
+                    FB
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider font-heading text-white block leading-none">FOFANA<span class="text-brand-gold"> BUSINESS</span></span>
+                    <span class="text-[10px] text-gray-400 tracking-widest uppercase">L'Excellence du Digital en Afrique</span>
+                </div>
+            </a>
+
+            <!-- NAVIGATION DESKTOP -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#realites" class="hover:text-brand-gold transition-colors">Réalités Africaines</a>
+                <a href="#formations" class="hover:text-brand-gold transition-colors">Nos Formations</a>
+                <a href="#avis" class="hover:text-brand-gold transition-colors">Avis Clients</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+            </nav>
+
+            <!-- BOUTON WHATSAPP DIRECT -->
+            <a href="https://wa.me/224628449771?text=Bonjour%20Fofana%20Business,%20j'ai%20une%20question%20sur%20vos%20formations." target="_blank" class="hidden sm:flex items-center gap-2 bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 px-4 py-2 rounded-full text-xs font-bold hover:bg-emerald-600 hover:text-white transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>+224 628 44 97 71</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-16 md:py-24 overflow-hidden border-b border-brand-border/50">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full opacity-20 pointer-events-none">
+            <div class="absolute top-10 left-10 w-80 h-80 bg-brand-gold rounded-full filter blur-[140px]"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-brand-orange rounded-full filter blur-[160px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-bold mb-6">
+                <i class="fa-solid fa-crown"></i> FOFANA BUSINESS - ACADÉMIE DIGITALE
+            </span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-heading text-white leading-tight max-w-4xl mx-auto mb-6">
+                Lancez Votre Business en Ligne Sans Blocages depuis <span class="gold-gradient-text">l'Afrique</span>
+            </h1>
+            <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 font-light">
+                Création de sites pro No-Code, Ciblage TikTok USA/Europe, utilisation de l'IA, montage vidéo et automatisation WhatsApp : toutes les compétences de haut niveau chez <strong>Fofana Business</strong>.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                <a href="#formations" class="w-full sm:w-auto btn-gold px-8 py-4 rounded-xl text-base font-extrabold flex items-center justify-center gap-3">
+                    <span>Découvrir nos Formations</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- BADGES RASSURANTS -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-brand-border/40 text-left">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center text-brand-gold"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div><h4 class="text-xs font-bold text-white">Mobile Money</h4><p class="text-[11px] text-gray-400">Orange, MTN, Wave, Moov</p></div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400"><i class="fa-brands fa-paypal"></i></div>
+                    <div><h4 class="text-xs font-bold text-white">Paiement PayPal & Int.</h4><p class="text-[11px] text-gray-400">Paiements mondiaux</p></div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400"><i class="fa-solid fa-code"></i></div>
+                    <div><h4 class="text-xs font-bold text-white">Sites Web No-Code</h4><p class="text-[11px] text-gray-400">Créer sans coder de A à Z</p></div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div><h4 class="text-xs font-bold text-white">Support Instantané</h4><p class="text-[11px] text-gray-400">Directement sur WhatsApp</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION RÉALITÉS AFRICAINES -->
+    <section id="realites" class="py-16 bg-brand-dark/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest block mb-2">Les Vrais Problèmes Résolus</span>
+                <h2 class="text-2xl sm:text-4xl font-bold font-heading text-white mb-4">
+                    Pourquoi tant de Jeunes Africains Réfléchissent sans Passer à l'Action ?
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base">
+                    Chez <strong>Fofana Business</strong>, nous avons conçu des formations ultra-pratiques adaptées à nos réalités : pas de théorie inutile, juste des étapes simples pour encaisser depuis n'importe quel pays africain.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Problème 1 -->
+                <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                    <div class="w-12 h-12 bg-red-500/10 border border-red-500/20 text-red-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Pas de compétences en Code</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Des entreprises et clients demandent des sites web modernes mais apprendre à coder prend des années.
+                    </p>
+                    <div class="bg-emerald-950/40 border border-emerald-500/30 p-3 rounded-xl text-xs text-emerald-300 flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check mt-0.5"></i>
+                        <span><strong>Solution :</strong> Maîtriser les outils No-Code pour créer des sites pro en 24h.</span>
+                    </div>
+                </div>
+
+                <!-- Problème 2 -->
+                <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                    <div class="w-12 h-12 bg-purple-500/10 border border-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Blocage TikTok & Ciblage</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Des comptes créés en Afrique qui restent bloqués à des vues locales sans générer de vrais revenus en devises fortes.
+                    </p>
+                    <div class="bg-emerald-950/40 border border-emerald-500/30 p-3 rounded-xl text-xs text-emerald-300 flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check mt-0.5"></i>
+                        <span><strong>Solution :</strong> Configuration d'un compte éligible USA/Europe depuis l'Afrique.</span>
+                    </div>
+                </div>
+
+                <!-- Problème 3 -->
+                <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                    <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-photo-film"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Galère du Montage Vidéo</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Des heures perdues sur CapCut ou InShot sans savoir faire des sous-titres animés ni des transitions captivantes.
+                    </p>
+                    <div class="bg-emerald-950/40 border border-emerald-500/30 p-3 rounded-xl text-xs text-emerald-300 flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check mt-0.5"></i>
+                        <span><strong>Solution :</strong> Maîtrise des techniques de montage rapide qui retiennent l'attention.</span>
+                    </div>
+                </div>
+
+                <!-- Problème 4 -->
+                <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                    <div class="w-12 h-12 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Ventes Manuelles Épuisantes</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Passer sa journée à répondre au "C'est combien ?" sans réussir à convaincre les prospects de faire le paiement.
+                    </p>
+                    <div class="bg-emerald-950/40 border border-emerald-500/30 p-3 rounded-xl text-xs text-emerald-300 flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check mt-0.5"></i>
+                        <span><strong>Solution :</strong> Tunnels WhatsApp automatisés et scripts de closing haute conversion.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOGUE DE FORMATIONS (PROPRE ET NET) -->
+    <section id="formations" class="py-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest block mb-2">Catalogue Officiel (8 Formations)</span>
+                    <h2 class="text-3xl sm:text-4xl font-black font-heading text-white">Nos Formations & Solutions Business</h2>
+                </div>
+                <!-- FILTRES -->
+                <div class="flex flex-wrap gap-2 mt-4 md:mt-0" id="filter-buttons">
+                    <button onclick="filterProducts('all')" class="filter-btn active bg-brand-gold text-brand-dark px-4 py-2 rounded-xl text-xs font-bold transition-all">Tous</button>
+                    <button onclick="filterProducts('nocode')" class="filter-btn bg-brand-card text-gray-300 border border-brand-border px-4 py-2 rounded-xl text-xs font-bold hover:border-brand-gold transition-all">No-Code / Web</button>
+                    <button onclick="filterProducts('tiktok')" class="filter-btn bg-brand-card text-gray-300 border border-brand-border px-4 py-2 rounded-xl text-xs font-bold hover:border-brand-gold transition-all">TikTok & IA</button>
+                    <button onclick="filterProducts('montage')" class="filter-btn bg-brand-card text-gray-300 border border-brand-border px-4 py-2 rounded-xl text-xs font-bold hover:border-brand-gold transition-all">Montage Vidéo</button>
+                    <button onclick="filterProducts('debutant')" class="filter-btn bg-brand-card text-gray-300 border border-brand-border px-4 py-2 rounded-xl text-xs font-bold hover:border-brand-gold transition-all">Démarrer & VIP</button>
+                </div>
+            </div>
+
+            <!-- GRILLE DES PRODUITS -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="products-grid">
+                <!-- Les cartes sont injectées dynamiquement en JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION AVIS CLIENTS -->
+    <section id="avis" class="py-16 bg-brand-card/40 border-y border-brand-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest block mb-2">Avis & Témoignages Africains</span>
+                <h2 class="text-3xl font-bold font-heading text-white">Ils Font Confiance à Fofana Business</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Témoignage No-Code -->
+                <div class="glass-card p-6 rounded-2xl border-brand-gold/40">
+                    <div class="flex items-center gap-1 text-brand-gold mb-3 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">"La formation No-Code est une pépite ! En 3 jours, j'ai créé le site vitrine d'un restaurant à Conakry pour 3 500 000 GNF. Investissement amorti tout de suite !"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold">OF</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ousmane Fofana</h4>
+                            <p class="text-[11px] text-gray-400">Conakry, Guinée 🇬🇳</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Togo -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-gold mb-3 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">"J'ai choisi le Togo dans le formulaire, le prix s'est affiché en FCFA et le paiement par Wave s'est fait très facilement !"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center font-bold text-emerald-400">KL</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Koffi Lawson</h4>
+                            <p class="text-[11px] text-gray-400">Lomé, Togo 🇹🇬</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Côte d'Ivoire -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-gold mb-3 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">"Grâce à la formation TikTok de Fofana Business, mon compte ciblant les USA génère maintenant un vrai revenu. Merci mon frère !"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-orange/20 flex items-center justify-center font-bold text-brand-orange">AB</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Awa Bamba</h4>
+                            <p class="text-[11px] text-gray-400">Abidjan, Côte d'Ivoire 🇨🇮</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sénégal -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-gold mb-3 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">"Le cours sur le montage CapCut avec smartphone m'a fait passer de 500 vues à plus de 100 000 vues en 2 semaines. Très pro !"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center font-bold text-blue-400">MS</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Mamadou Sy</h4>
+                            <p class="text-[11px] text-gray-400">Dakar, Sénégal 🇸🇳</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cameroun -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-gold mb-3 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">"J'ai payé par PayPal. La formation IA est ultra claire et m'a permis d'automatiser ma création de contenu sans prise de tête."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400">CK</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Christian Kamga</h4>
+                            <p class="text-[11px] text-gray-400">Douala, Cameroun 🇨🇲</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burkina Faso -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-gold mb-3 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">"Quand j'ai sélectionné le code +226 au moment de commander, le site a direct reconnu mon pays. Service client super rapide !"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center font-bold text-amber-400">IS</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ibrahim Sawadogo</h4>
+                            <p class="text-[11px] text-gray-400">Ouagadougou, Burkina 🇧🇫</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-heading text-white mb-2">Questions Fréquentes</h2>
+                <p class="text-gray-400 text-sm">Des réponses simples pour acheter en toute tranquillité</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glass-card p-5 rounded-xl">
+                    <h3 class="text-base font-bold text-white flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+                        <span>Comment payer dans la monnaie de mon pays ?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-gold transition-transform"></i>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-3 hidden">
+                        Lorsque vous cliquez sur "Acheter", sélectionnez votre pays dans le formulaire. Le prix exact dans votre monnaie (FCFA, GNF, Dollar, Euro, etc.) et les moyens de paiement disponibles chez vous s'afficheront automatiquement.
+                    </p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl">
+                    <h3 class="text-base font-bold text-white flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+                        <span>Comment vais-je recevoir ma formation No-Code ou TikTok ?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-gold transition-transform"></i>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-3 hidden">
+                        Dès que votre paiement (Mobile Money ou PayPal) est validé, vous recevez directement sur WhatsApp l'accès sécurisé à votre formation (PDF ou Vidéos HD) ainsi que l'invitation au groupe privé Fofana Business.
+                    </p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl">
+                    <h3 class="text-base font-bold text-white flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+                        <span>Quels sont les moyens de paiement acceptés ?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-gold transition-transform"></i>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-3 hidden">
+                        Nous acceptons les transferts Mobile Money (Orange Money, MTN, Moov, Wave) ainsi que **PayPal** pour les clients résidant à l'international. Le numéro direct pour les dépôts est le <strong class="text-brand-gold">+224 628 44 97 71</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto bg-brand-dark border-t border-brand-border py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-2 mb-3">
+                <div class="w-7 h-7 rounded-lg bg-brand-gold text-brand-dark font-black flex items-center justify-center text-xs">FB</div>
+                <span class="font-bold text-white tracking-wider text-sm">FOFANA BUSINESS</span>
+            </div>
+            <p class="text-gray-400 text-xs mb-2">© 2026 FOFANA BUSINESS. Tous droits réservés.</p>
+            <p class="text-gray-500 text-[11px]">Service client direct sur WhatsApp au : <span class="text-brand-gold">+224 628 44 97 71</span></p>
+        </div>
+    </footer>
+
+    <!-- MODAL DETAILS ET PROGRAMME COMPLET -->
+    <div id="details-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-brand-card border border-brand-border rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-8 max-h-[90vh] overflow-y-auto">
+            <!-- FERMER -->
+            <button onclick="closeDetailsModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white w-9 h-9 rounded-full bg-brand-dark flex items-center justify-center border border-brand-border">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <span id="detail-tag" class="bg-brand-gold/10 text-brand-gold border border-brand-gold/20 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                TAG
+            </span>
+
+            <h2 id="detail-title" class="text-2xl sm:text-3xl font-black font-heading text-white mt-3 mb-4 leading-snug">Titre de la Formation</h2>
+
+            <div class="bg-brand-dark/70 border border-brand-border p-4 rounded-xl mb-6">
+                <h4 class="text-xs font-bold text-brand-gold uppercase tracking-wider mb-1">Pourquoi cette formation est indispensable :</h4>
+                <p id="detail-pitch" class="text-gray-300 text-xs sm:text-sm leading-relaxed"></p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-list-check text-brand-gold"></i>
+                    <span>Programme détaillé & Ce que tu vas apprendre :</span>
+                </h3>
+                <ul id="detail-modules" class="space-y-2.5 text-xs sm:text-sm text-gray-300">
+                    <!-- Injecté en JS -->
+                </ul>
+            </div>
+
+            <!-- ZONE D'ACHAT ET CHOIX DU FORMAT -->
+            <div class="bg-gradient-to-br from-brand-dark to-brand-card p-5 rounded-2xl border border-brand-gold/30 mt-8">
+                <h4 class="text-sm font-bold text-white mb-3 text-center">Sélectionne ton Format & Commande :</h4>
+                
+                <div class="grid grid-cols-2 gap-3 mb-4">
+                    <button id="detail-btn-pdf" onclick="switchDetailFormat('pdf')" class="py-3 px-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center justify-center gap-1">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-file-pdf"></i> Format PDF</span>
+                        <span id="detail-price-pdf" class="text-emerald-400 font-extrabold text-sm">Prix PDF</span>
+                    </button>
+                    <button id="detail-btn-video" onclick="switchDetailFormat('video')" class="py-3 px-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center justify-center gap-1">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-play"></i> Format VIDÉO</span>
+                        <span id="detail-price-video" class="text-emerald-400 font-extrabold text-sm">Prix Vidéo</span>
+                    </button>
+                </div>
+
+                <div class="text-center mb-4">
+                    <span class="text-xs text-gray-400">Total à régler : </span>
+                    <span id="detail-selected-price" class="text-xl font-black text-brand-gold">0 GNF</span>
+                </div>
+
+                <button onclick="proceedToCheckoutFromModal()" class="w-full btn-gold py-4 rounded-xl text-sm font-extrabold flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Commander Maintenant</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FORMULAIRE DE COMMANDE INTEL-PHONE (LÀ OÙ SE FAIT LA SÉLECTION DE PAYS & MOYEN DE PAIEMENT) -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-brand-card border border-brand-border rounded-2xl max-w-lg w-full p-6 relative shadow-2xl my-8">
+            <!-- FERMER -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white w-8 h-8 rounded-full bg-brand-dark flex items-center justify-center border border-brand-border">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-brand-gold text-[10px] font-extrabold uppercase tracking-wider">FOFANA BUSINESS - Valider ma commande</span>
+                <h3 id="modal-product-title" class="text-xl font-bold font-heading text-white mt-1">Nom du Produit</h3>
+                <div class="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-brand-dark rounded-lg border border-brand-border">
+                    <span class="text-xs text-gray-400">Format :</span>
+                    <span id="modal-format-badge" class="text-xs font-bold text-brand-gold">VIDÉO</span>
+                    <span class="text-gray-600">|</span>
+                    <span id="modal-product-price" class="text-sm font-extrabold text-emerald-400">Prix</span>
+                </div>
+            </div>
+
+            <form id="order-form" onsubmit="handleOrderSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">Votre Nom & Prénom *</label>
+                    <input type="text" id="cust-name" required placeholder="Ex: Ousmane Fofana" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                </div>
+
+                <!-- SÉLECTEUR D'INDICATIF ET PAYS DYNAMIQUE -->
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">Sélectionnez Votre Pays & WhatsApp *</label>
+                    <div class="flex gap-2">
+                        <select id="cust-country-code" onchange="onCountryCodeChange(this.value)" class="w-2/5 bg-brand-dark border border-brand-border rounded-xl px-2 py-3 text-xs sm:text-sm text-brand-gold font-bold focus:outline-none focus:border-brand-gold transition-colors">
+                            <option value="+224">🇬🇳 +224 (Guinée)</option>
+                            <option value="+225">🇨🇮 +225 (Côte d'Ivoire)</option>
+                            <option value="+221">🇸🇳 +221 (Sénégal)</option>
+                            <option value="+223">🇲🇱 +223 (Mali)</option>
+                            <option value="+226">🇧🇫 +226 (Burkina Faso)</option>
+                            <option value="+228">🇹🇬 +228 (Togo)</option>
+                            <option value="+229">🇧🇯 +229 (Bénin)</option>
+                            <option value="+227">🇳🇪 +227 (Niger)</option>
+                            <option value="+237">🇨🇲 +237 (Cameroun)</option>
+                            <option value="+241">🇬🇦 +241 (Gabon)</option>
+                            <option value="+242">🇨🇬 +242 (Congo)</option>
+                            <option value="+243">🇨🇩 +243 (RDC)</option>
+                            <option value="+235">🇹🇩 +235 (Tchad)</option>
+                            <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                            <option value="+233">🇬🇭 +233 (Ghana)</option>
+                            <option value="+254">🇰🇪 +254 (Kenya)</option>
+                            <option value="+250">🇷🇼 +250 (Rwanda)</option>
+                            <option value="+261">🇲🇬 +261 (Madagascar)</option>
+                            <option value="+222">🇲🇷 +222 (Mauritanie)</option>
+                            <option value="+212">🇲🇦 +212 (Maroc)</option>
+                            <option value="+213">🇩🇿 +213 (Algérie)</option>
+                            <option value="+216">🇹🇳 +216 (Tunisie)</option>
+                            <option value="+20">🇪🇬 +20 (Égypte)</option>
+                            <option value="+27">🇿🇦 +27 (Afrique du Sud)</option>
+                            <option value="+33">🇫🇷 +33 (France)</option>
+                            <option value="+1">🇺🇸🇨🇦 +1 (USA / Canada)</option>
+                        </select>
+                        <input type="tel" id="cust-phone" required placeholder="Numéro WhatsApp" class="w-3/5 bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">Pays *</label>
+                        <input type="text" id="cust-country-name" readonly required class="w-full bg-brand-dark/50 border border-brand-border text-brand-gold font-bold rounded-xl px-4 py-3 text-sm focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">Ville / Quartier *</label>
+                        <input type="text" id="cust-city" required placeholder="Ex: Conakry / Kaloum" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">Moyen de Paiement Disponible dans ton Pays *</label>
+                    <select id="cust-payment" onchange="updatePaymentInstructions(this.value)" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                        <!-- Dynamiquement rempli par pays -->
+                    </select>
+                </div>
+
+                <!-- CONSIGNES DE PAIEMENT -->
+                <div id="payment-instructions" class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl">
+                    <p class="text-xs text-amber-200 font-medium mb-1">
+                        <i class="fa-solid fa-triangle-exclamation mr-1"></i> Instruction de paiement direct :
+                    </p>
+                    <p id="payment-note" class="text-xs text-gray-300">
+                        Effectuez le paiement via le compte officiel Fofana Business : <br>
+                        <span class="text-base font-extrabold text-brand-gold tracking-wider select-all block my-1">+224 628 44 97 71</span>
+                    </p>
+                    <p class="text-[11px] text-gray-400">Après validation, cliquez ci-dessous pour confirmer sur WhatsApp.</p>
+                </div>
+
+                <button type="submit" class="w-full btn-gold py-4 rounded-xl text-sm font-extrabold flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Envoyer la Commande sur WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOGIQUE JAVASCRIPT ET CALCULS -->
+    <script>
+        // TAUX DE CONVERSION DEVISE
+        const exchangeRates = {
+            GNF: { rate: 1, symbol: 'GNF' },
+            XOF: { rate: 0.070, symbol: 'FCFA' },
+            XAF: { rate: 0.070, symbol: 'FCFA' },
+            NGN: { rate: 0.165, symbol: '₦' },
+            MGA: { rate: 0.520, symbol: 'Ar' },
+            USD: { rate: 0.000116, symbol: '$' },
+            EUR: { rate: 0.000108, symbol: '€' }
+        };
+
+        // TABLEAU DE CORRESPONDANCE INDICATIF VERS PAYS, DEVISE ET MOYENS DE PAIEMENT LOCAUX
+        const countryData = {
+            '+224': { country: 'Guinée', currency: 'GNF', payments: ['Orange Money Guinée', 'MTN Mobile Money', 'PayPal'] },
+            '+225': { country: 'Côte d\'Ivoire', currency: 'XOF', payments: ['Wave Côte d\'Ivoire', 'Orange Money CI', 'MTN MoMo CI', 'PayPal'] },
+            '+221': { country: 'Sénégal', currency: 'XOF', payments: ['Wave Sénégal', 'Orange Money Sénégal', 'Free Money', 'PayPal'] },
+            '+223': { country: 'Mali', currency: 'XOF', payments: ['Orange Money Mali', 'Moov Money Mali', 'Wave Mali', 'PayPal'] },
+            '+226': { country: 'Burkina Faso', currency: 'XOF', payments: ['Orange Money Burkina', 'Moov Africa', 'Wave', 'PayPal'] },
+            '+228': { country: 'Togo', currency: 'XOF', payments: ['T-Money Togo', 'Moov Money Togo', 'Wave', 'PayPal'] },
+            '+229': { country: 'Bénin', currency: 'XOF', payments: ['MTN MoMo Bénin', 'Moov Bénin', 'PayPal'] },
+            '+227': { country: 'Niger', currency: 'XOF', payments: ['Airtel Money Niger', 'Moov Niger', 'PayPal'] },
+            '+237': { country: 'Cameroun', currency: 'XAF', payments: ['MTN Mobile Money Cameroun', 'Orange Money Cameroun', 'PayPal'] },
+            '+241': { country: 'Gabon', currency: 'XAF', payments: ['Airtel Money Gabon', 'Moov Gabon', 'PayPal'] },
+            '+242': { country: 'Congo', currency: 'XAF', payments: ['MTN Mobile Money Congo', 'Airtel Money', 'PayPal'] },
+            '+243': { country: 'République Démocratique du Congo', currency: 'USD', payments: ['M-Pesa RDC', 'Airtel Money RDC', 'Orange Money RDC', 'PayPal'] },
+            '+235': { country: 'Tchad', currency: 'XAF', payments: ['Airtel Money Tchad', 'Moov Tchad', 'PayPal'] },
+            '+234': { country: 'Nigeria', currency: 'NGN', payments: ['Virement Bancaire Nigeria', 'Flutterwave', 'PayPal'] },
+            '+233': { country: 'Ghana', currency: 'USD', payments: ['MTN MoMo Ghana', 'Vodafone Cash', 'PayPal'] },
+            '+254': { country: 'Kenya', currency: 'USD', payments: ['M-Pesa Kenya', 'Airtel Money', 'PayPal'] },
+            '+250': { country: 'Rwanda', currency: 'USD', payments: ['MTN MoMo Rwanda', 'Airtel Money', 'PayPal'] },
+            '+261': { country: 'Madagascar', currency: 'MGA', payments: ['Mvola Madagascar', 'Orange Money Madagascar', 'Airtel Money', 'PayPal'] },
+            '+222': { country: 'Mauritanie', currency: 'XOF', payments: ['Bankily', 'Sedad / Mauripay', 'PayPal'] },
+            '+212': { country: 'Maroc', currency: 'EUR', payments: ['Carte Bancaire Maroc', 'Virement International', 'PayPal'] },
+            '+213': { country: 'Algérie', currency: 'EUR', payments: ['CCP / BaridiMob', 'Virement', 'PayPal'] },
+            '+216': { country: 'Tunisie', currency: 'EUR', payments: ['D17 / Flouci', 'Carte Bancaire', 'PayPal'] },
+            '+20': { country: 'Égypte', currency: 'USD', payments: ['Vodafone Cash Égypte', 'InstaPay', 'PayPal'] },
+            '+27': { country: 'Afrique du Sud', currency: 'USD', payments: ['EFT Bancaire', 'Capitec Pay', 'PayPal'] },
+            '+33': { country: 'France', currency: 'EUR', payments: ['Carte Bancaire (Visa / Mastercard)', 'PayPal', 'Virement SEPA'] },
+            '+1': { country: 'USA / Canada', currency: 'USD', payments: ['Carte Bancaire (Visa / Mastercard / Amex)', 'PayPal', 'Interac (Canada)'] }
+        };
+
+        // FONCTION POUR FORMATER LE PRIX EN GNF ET EN DEVISE LOCALE
+        function formatPrice(gnfPriceInt, targetCurr = 'GNF') {
+            const currObj = exchangeRates[targetCurr] || exchangeRates['GNF'];
+            const converted = gnfPriceInt * currObj.rate;
+
+            if (targetCurr === 'GNF') {
+                return new Intl.NumberFormat('fr-FR').format(gnfPriceInt) + ' GNF';
+            } else if (targetCurr === 'XOF' || targetCurr === 'XAF') {
+                return new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 }).format(Math.round(converted)) + ' FCFA';
+            } else if (targetCurr === 'NGN') {
+                return '₦' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(Math.round(converted));
+            } else if (targetCurr === 'MGA') {
+                return new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 }).format(Math.round(converted)) + ' Ar';
+            } else if (targetCurr === 'USD') {
+                return '$' + converted.toFixed(2);
+            } else if (targetCurr === 'EUR') {
+                return converted.toFixed(2) + ' €';
+            }
+            return gnfPriceInt + ' GNF';
+        }
+
+        // CATALOGUE DES FORMATIONS
+        const productsData = [
+            {
+                id: 'nocode-mastery',
+                category: 'nocode',
+                title: 'Création de Sites Web Pro Sans Coder (No-Code Mastery)',
+                tag: 'Prestigieuse & La Plus Rentable',
+                description: 'Apprenez à concevoir des boutiques e-commerce, portfolios et sites d\'entreprises professionnels avec WordPress, Elementor et Framer sans toucher une ligne de code. Lancez votre agence ou vendez vos services partout en Afrique.',
+                pitch: 'La création de site web est le service digital le plus demandé au monde. Au lieu de passer des années à apprendre la programmation, cette formation vous montre comment assembler des sites web d\'exception en quelques heures et les vendre jusqu\'à 5 000 000 GNF par client !',
+                pdfPriceRaw: 700000,
+                videoPriceRaw: 2000000,
+                modules: [
+                    'Module 1 : Introduction au No-Code & Installation de l\'environnement de travail',
+                    'Module 2 : Maîtrise complète de WordPress & Elementor Pro de A à Z',
+                    'Module 3 : Création d\'une Boutique E-commerce avec paiement Mobile Money',
+                    'Module 4 : Conception de Landing Pages haute conversion et de Portfolios',
+                    'Module 5 : Optimisation de la vitesse du site, sécurité anti-piratage & SEO',
+                    'Module 6 : Comment fixer ses prix, rédiger un devis et décrocher des contrats à 2 000 000+ GNF'
+                ]
+            },
+            {
+                id: 'lancer-business',
+                category: 'debutant',
+                title: 'Comment Démarrer & Réussir dans le Business en Ligne en Afrique',
+                tag: 'Débutant à Pro - Incontournable',
+                description: 'Le guide ultime de A à Z pour tout jeune africain qui veut se lancer sans s\'embrouiller. Choix de niches rentables, mentalité de gagnant, méthodes pour encaisser ses sous et trouver ses premiers clients facilement.',
+                pitch: 'Tu veux te lancer sur internet mais tu te sens perdu au milieu de toutes les informations ? Cette formation est spécialement conçue pour lever tous les doutes, éliminer la peur de l\'échec et te donner une feuille de route claire et sans détours.',
+                pdfPriceRaw: 300000,
+                videoPriceRaw: 700000,
+                modules: [
+                    'Module 1 : Démystifier le business en ligne en Afrique & supprimer les fausses croyances',
+                    'Module 2 : Choisir une niche ultra-rentable adaptée à ton marché local',
+                    'Module 3 : Les solutions concrètes pour recevoir tes paiements (Mobile Money, cartes virtuelles, PayPal)',
+                    'Module 4 : Créer une offre irrésistible que tes clients ne pourront pas refuser',
+                    'Module 5 : Stratégie d\'acquisition : Trouver tes 100 premiers clients sans budget pub',
+                    'Module 6 : Organisation & routine quotidienne du businessman africain à succès'
+                ]
+            },
+            {
+                id: 'montage-capcut-inshot',
+                category: 'montage',
+                title: 'Montage Vidéo Pro sur Smartphone avec CapCut & InShot',
+                tag: 'Pratique & Création de Contenu',
+                description: 'Marre des vidéos plates qui ne font pas de vues ? Apprenez à maîtriser CapCut et InShot directement sur votre téléphone pour créer des sous-titres dynamiques, des transitions pro et des montages captivants.',
+                pitch: 'Le montage vidéo est la compétence numéro 1 pour exploser sur TikTok, Reels et Shorts. Pas besoin d\'un ordinateur puissant ni d\'outils compliqués : avec ton simple smartphone, tu vas apprendre à produire des vidéos à l\'aspect cinéma qui retiennent l\'attention de bout en bout.',
+                pdfPriceRaw: 250000,
+                videoPriceRaw: 550000,
+                modules: [
+                    'Module 1 : Prise en main ultra-rapide de CapCut & InShot sur Android et iPhone',
+                    'Module 2 : Le secret du découpage dynamique pour ne laisser aucun temps mort',
+                    'Module 3 : Ajouter des sous-titres automatiques, stylisés et animés en français',
+                    'Module 4 : Utilisation stratégique des effets sonores (SFX) et musiques libres de droit',
+                    'Module 5 : Retouche couleur, filtres et amélioration de la qualité visuelle',
+                    'Module 6 : Exportation optimale en Haute Définition sans perte de qualité'
+                ]
+            },
+            {
+                id: 'tiktok-usa',
+                category: 'tiktok',
+                title: 'TikTok Monétisation & Ciblage USA / Europe depuis l\'Afrique',
+                tag: 'Éligibilité & Devises Fortes',
+                description: 'Apprenez à créer un compte TikTok éligible à la monétisation Beta depuis l\'Afrique. Contournez la géolocalisation pour faire monter votre RPM en ciblant une audience américaine et européenne.',
+                pitch: 'La plupart des jeunes africains font des millions de vues sur TikTok sans toucher un seul franc parce que la monétisation directe n\'est pas disponible dans nos pays. Cette formation te montre la procédure exacte pour débloquer la monétisation et toucher des revenus en euros/dollars.',
+                pdfPriceRaw: 250000,
+                videoPriceRaw: 650000,
+                modules: [
+                    'Module 1 : Pourquoi tes comptes actuels ne seront jamais monétisés et comment réparer cela',
+                    'Module 2 : Procédure exacte de création d’un compte TikTok US/Europe depuis l’Afrique',
+                    'Module 3 : Configurer le ciblage géographique pour toucher les Américains et les Européens',
+                    'Module 4 : Trouver des idées de vidéos virales à fort RPM (Rémunération Pour Mille vues)',
+                    'Module 5 : Procédure de validation de l\'identité et configuration du moyen de retrait',
+                    'Module 6 : Stratégie de publication quotidienne pour atteindre les 10k abonnés en temps record'
+                ]
+            },
+            {
+                id: 'ia-videos',
+                category: 'tiktok',
+                title: 'Dompter l\'IA : Création de Contenu & Vidéos Sans Montrer sa Tête',
+                tag: 'IA & Automatisation',
+                description: 'Utilisez ChatGPT, Midjourney, CapCut et les avatars virtuels pour produire des centaines de vidéos virales en automatique sans jamais filmer votre visage.',
+                pitch: 'Tu es timide ? Tu ne veux pas montrer ton visage à la caméra ? L\'Intelligence Artificielle est ta meilleure alliée. Apprends à générer des voix humaines, des visages hyper-réalistes et des scripts captivants en quelques clics.',
+                pdfPriceRaw: 300000,
+                videoPriceRaw: 800000,
+                modules: [
+                    'Module 1 : Les meilleurs outils IA gratuits et payants pour la création de contenu',
+                    'Module 2 : Écrire des scripts captivants en 10 secondes avec les prompts ChatGPT secrets',
+                    'Module 3 : Générer des voix-off humaines ultra-naturelles en plusieurs langues',
+                    'Module 4 : Créer des avatars animés photoréalistes qui parlent à ta place',
+                    'Module 5 : Assemblage automatique des vidéos et mise en ligne',
+                    'Module 6 : Stratégie de chaîne automatique sur TikTok, YouTube Shorts et Instagram Reels'
+                ]
+            },
+            {
+                id: 'whatsapp-business',
+                category: 'nocode',
+                title: 'WhatsApp Business & Vente en Automatique',
+                tag: 'Closing & Conversion',
+                description: 'Transformez votre WhatsApp en machine de vente autonome. Configuration de catalogue pro, messages d\'accueil automatiques et tunnels de closing pour convertir vos prospects.',
+                pitch: 'Arrette de perdre du temps à discuter des heures avec des curieux qui n\'achètent pas. Transforme ton application WhatsApp en une véritable boutique automatisée capable de vendre tes formations et produits digitaux 24h/24.',
+                pdfPriceRaw: 250000,
+                videoPriceRaw: 500000,
+                modules: [
+                    'Module 1 : Optimisation de ton profil WhatsApp Business pour inspirer une confiance immédiate',
+                    'Module 2 : Configuration du catalogue produits et des réponses rapides',
+                    'Module 3 : Mise en place d\'un bot de réponse automatique sans compétences techniques',
+                    'Module 4 : Les scripts de vente "Closing Rapide" pour transformer 8 curieux sur 10 en acheteurs',
+                    'Module 5 : L\'art d\'utiliser les Statuts WhatsApp pour vendre tous les jours sans harceler',
+                    'Module 6 : Gérer les paiements Mobile Money et PayPal en toute transparence'
+                ]
+            },
+            {
+                id: 'facebook-ads',
+                category: 'nocode',
+                title: 'Ciblage Publicitaire Facebook Ads & Meta Pro',
+                tag: 'Vente Massive',
+                description: 'Maîtrisez le ciblage publicitaire ultra-précis en Afrique sans gaspiller votre argent. Apprenez à payer vos publicités facilement et éviter les blocages de compte.',
+                pitch: 'Marre de payer des publicités Facebook qui ne t\'apportent que des "Likes" sans aucune vente ? Découvre comment paramétrer tes campagnes comme un professionnel pour attirer des clients prêts à payer.',
+                pdfPriceRaw: 350000,
+                videoPriceRaw: 900000,
+                modules: [
+                    'Module 1 : Structure d\'un Business Manager Meta et vérification du compte',
+                    'Module 2 : Comment payer ses pubs depuis l\'Afrique sans carte bancaire bloquée',
+                    'Module 3 : Trouver les audiences acheteuses en Guinée, Côte d\'Ivoire, Sénégal et ailleurs',
+                    'Module 4 : Création de visuels et de textes publicitaires captivants',
+                    'Module 5 : Lancer une campagne axée vers WhatsApp pour recevoir des messages d\'achats directs',
+                    'Module 6 : Analyser les statistiques et multiplier ses ventes en dépensant moins'
+                ]
+            },
+            {
+                id: 'pack-ecosysteme',
+                category: 'debutant',
+                title: 'Pack Premium Écosystème VIP & Mentorat Direct',
+                tag: 'Kit VIP Prêt à Vendre',
+                description: 'L\'accès ultime à toutes nos ressources : toutes les formations, templates Canva, scripts IA, E-books avec droits de revente VIP, plus un accompagnement direct pour rentabiliser votre business.',
+                pitch: 'Tu veux la totale ? Accède immédiatement à l\'ensemble des 7 formations Fofana Business, à tous nos modèles personnalisables et bénéficie d\'un suivi direct sur WhatsApp pour t\'aider à construire ton empire digital.',
+                pdfPriceRaw: 500000,
+                videoPriceRaw: 1500000,
+                modules: [
+                    'Accès instantané à TOUTES les formations du catalogue',
+                    'Bibliothèque de 500+ templates Canva éditables prêts à publier',
+                    'Banque de scripts de vente prêts à l\'emploi pour WhatsApp & Facebook',
+                    'Droits de revente VIP : Re-vends nos produits et garde 100% des gains',
+                    'Mentorat direct avec Fofana via WhatsApp pour corriger tes erreurs',
+                    'Invitation au Mastermind restreint des meilleurs membres Fofana Business'
+                ]
+            }
+        ];
+
+        // ÉTAT DU FORMAT SÉLECTIONNÉ POUR CHAQUE PRODUIT
+        const selectedFormats = {};
+        productsData.forEach(p => selectedFormats[p.id] = 'video');
+
+        let currentDetailProduct = null;
+        let currentDetailFormat = 'video';
+        let currentOrderProduct = null;
+
+        // RENDU DES CARTES PRODUIT EN GNF DE BASE
+        function renderProducts(filter = 'all') {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = '';
+
+            const filtered = filter === 'all' 
+                ? productsData 
+                : productsData.filter(p => p.category === filter);
+
+            filtered.forEach(p => {
+                const currentFormat = selectedFormats[p.id];
+                const isVideo = currentFormat === 'video';
+
+                const pdfFormatted = formatPrice(p.pdfPriceRaw, 'GNF');
+                const videoFormatted = formatPrice(p.videoPriceRaw, 'GNF');
+                const currentPriceFormatted = isVideo ? videoFormatted : pdfFormatted;
+
+                const cardHtml = `
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 hover:border-brand-gold/40 relative ${p.id === 'nocode-mastery' ? 'border-brand-gold/60 shadow-xl' : ''}">
+                        ${p.id === 'nocode-mastery' ? '<span class="absolute -top-3 right-6 bg-gradient-to-r from-brand-gold to-brand-orange text-brand-dark text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-md"><i class="fa-solid fa-crown mr-1"></i> Formation Star No-Code</span>' : ''}
+                        <div>
+                            <div class="flex justify-between items-start gap-2 mb-3">
+                                <span class="bg-brand-gold/10 text-brand-gold border border-brand-gold/20 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                                    ${p.tag}
+                                </span>
+                                <span class="text-xs text-gray-400 font-mono"><i class="fa-solid fa-certificate text-brand-gold mr-1"></i> Fofana Business</span>
+                            </div>
+
+                            <h3 class="text-xl font-bold font-heading text-white mb-2 leading-snug">${p.title}</h3>
+                            <p class="text-gray-400 text-xs sm:text-sm mb-6 leading-relaxed">${p.description}</p>
+
+                            <!-- SÉLECTEUR RAPIDE DE FORMAT -->
+                            <div class="bg-brand-dark p-1.5 rounded-xl border border-brand-border flex items-center gap-1 mb-6">
+                                <button onclick="setFormat('${p.id}', 'pdf')" class="w-1/2 py-2 text-xs font-bold rounded-lg transition-all flex items-center justify-center gap-1.5 ${!isVideo ? 'bg-brand-gold text-brand-dark shadow-md' : 'text-gray-400 hover:text-white'}">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                    <span>PDF (${pdfFormatted})</span>
+                                </button>
+                                <button onclick="setFormat('${p.id}', 'video')" class="w-1/2 py-2 text-xs font-bold rounded-lg transition-all flex items-center justify-center gap-1.5 ${isVideo ? 'bg-brand-gold text-brand-dark shadow-md' : 'text-gray-400 hover:text-white'}">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <span>VIDÉO (${videoFormatted})</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- DEUX BOUTONS : PROGRAMME & ACHAT DIRECT -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-brand-border/40">
+                            <button onclick="openDetailsModal('${p.id}')" class="w-full bg-brand-dark hover:bg-brand-border/60 text-gray-200 border border-brand-border py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all">
+                                <i class="fa-solid fa-eye text-brand-gold"></i>
+                                <span>Voir le Programme</span>
+                            </button>
+                            <button onclick="openCheckoutDirect('${p.id}')" class="w-full btn-gold py-3 rounded-xl text-xs font-extrabold flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Acheter (${currentPriceFormatted})</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += cardHtml;
+            });
+        }
+
+        // BASCULER LE FORMAT SUR LA CARTE
+        function setFormat(productId, format) {
+            selectedFormats[productId] = format;
+            const activeBtn = document.querySelector('.filter-btn.active');
+            const currentFilter = activeBtn ? activeBtn.getAttribute('onclick').match(/'([^']+)'/)[1] : 'all';
+            renderProducts(currentFilter);
+        }
+
+        // FILTRER PAR CATEGORIE
+        function filterProducts(cat) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-brand-gold', 'text-brand-dark');
+                btn.classList.add('bg-brand-card', 'text-gray-300');
+            });
+            event.target.classList.add('active', 'bg-brand-gold', 'text-brand-dark');
+            event.target.classList.remove('bg-brand-card', 'text-gray-300');
+            renderProducts(cat);
+        }
+
+        // OUVRIR LA POPUP DÉTAILS / PROGRAMME COMPLET
+        function openDetailsModal(productId) {
+            const product = productsData.find(p => p.id === productId);
+            currentDetailProduct = product;
+            currentDetailFormat = selectedFormats[productId] || 'video';
+
+            document.getElementById('detail-tag').innerText = product.tag;
+            document.getElementById('detail-title').innerText = product.title;
+            document.getElementById('detail-pitch').innerText = product.pitch;
+
+            document.getElementById('detail-price-pdf').innerText = formatPrice(product.pdfPriceRaw, 'GNF');
+            document.getElementById('detail-price-video').innerText = formatPrice(product.videoPriceRaw, 'GNF');
+
+            // Remplir les modules
+            const modulesList = document.getElementById('detail-modules');
+            modulesList.innerHTML = '';
+            product.modules.forEach(m => {
+                modulesList.innerHTML += `
+                    <li class="flex items-start gap-2.5 bg-brand-dark/40 p-2.5 rounded-lg border border-brand-border/30">
+                        <i class="fa-solid fa-circle-check text-brand-gold text-sm mt-0.5"></i>
+                        <span>${m}</span>
+                    </li>
+                `;
+            });
+
+            switchDetailFormat(currentDetailFormat);
+            document.getElementById('details-modal').classList.remove('hidden');
+        }
+
+        // CHANGER FORMAT DANS LA POPUP DÉTAILS
+        function switchDetailFormat(format) {
+            currentDetailFormat = format;
+            selectedFormats[currentDetailProduct.id] = format;
+
+            const btnPdf = document.getElementById('detail-btn-pdf');
+            const btnVideo = document.getElementById('detail-btn-video');
+            const selectedPrice = document.getElementById('detail-selected-price');
+
+            if (format === 'pdf') {
+                btnPdf.className = "py-3 px-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center justify-center gap-1 bg-brand-gold text-brand-dark border-brand-gold shadow-lg";
+                btnVideo.className = "py-3 px-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center justify-center gap-1 bg-brand-dark text-gray-400 border-brand-border hover:text-white";
+                selectedPrice.innerText = formatPrice(currentDetailProduct.pdfPriceRaw, 'GNF');
+            } else {
+                btnVideo.className = "py-3 px-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center justify-center gap-1 bg-brand-gold text-brand-dark border-brand-gold shadow-lg";
+                btnPdf.className = "py-3 px-3 rounded-xl text-xs font-bold border transition-all flex flex-col items-center justify-center gap-1 bg-brand-dark text-gray-400 border-brand-border hover:text-white";
+                selectedPrice.innerText = formatPrice(currentDetailProduct.videoPriceRaw, 'GNF');
+            }
+        }
+
+        function closeDetailsModal() {
+            document.getElementById('details-modal').classList.add('hidden');
+        }
+
+        function proceedToCheckoutFromModal() {
+            closeDetailsModal();
+            openCheckoutDirect(currentDetailProduct.id);
+        }
+
+        // QUAND LE CLIENT SÉLECTIONNE SON PAYS DANS LA POPUP ACHAT
+        function onCountryCodeChange(code) {
+            const data = countryData[code] || { country: 'International', currency: 'USD', payments: ['PayPal', 'Carte Bancaire'] };
+            document.getElementById('cust-country-name').value = data.country;
+            
+            // Mettre à jour les options du menu déroulant des moyens de paiement selon le pays choisi
+            const paymentSelect = document.getElementById('cust-payment');
+            paymentSelect.innerHTML = '';
+            data.payments.forEach(payMethod => {
+                const opt = document.createElement('option');
+                opt.value = payMethod;
+                opt.textContent = payMethod;
+                paymentSelect.appendChild(opt);
+            });
+
+            // Mettre à jour le prix affiché dans la monnaie du pays sélectionné !
+            if (currentOrderProduct) {
+                const isVid = currentOrderProduct.chosenFormat === 'video';
+                const priceRaw = isVid ? currentOrderProduct.videoPriceRaw : currentOrderProduct.pdfPriceRaw;
+                const formattedPrice = formatPrice(priceRaw, data.currency);
+                document.getElementById('modal-product-price').innerText = formattedPrice;
+            }
+        }
+
+        // OUVRIR LE FORMULAIRE DE COMMANDE DIRECT
+        function openCheckoutDirect(productId) {
+            const product = productsData.find(p => p.id === productId);
+            const format = selectedFormats[productId] || 'video';
+            const priceRaw = format === 'video' ? product.videoPriceRaw : product.pdfPriceRaw;
+
+            currentOrderProduct = {
+                ...product,
+                chosenFormat: format
+            };
+
+            document.getElementById('modal-product-title').innerText = product.title;
+            document.getElementById('modal-format-badge').innerText = format.toUpperCase();
+
+            // Mettre le pays par défaut (+224 Guinée) et adapter le prix et moyens de paiement
+            const initialCode = document.getElementById('cust-country-code').value;
+            onCountryCodeChange(initialCode);
+
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        // METTRE À JOUR INSTRUCTIONS DE PAIEMENT SÉLECTIONNÉ
+        function updatePaymentInstructions(paymentMethod) {
+            const note = document.getElementById('payment-note');
+            if (paymentMethod.includes('PayPal')) {
+                note.innerHTML = `L'adresse PayPal officielle vous sera envoyée directement sur WhatsApp par Fofana Business.<br>Numéro WhatsApp support : <span class="text-base font-extrabold text-brand-gold block my-1">+224 628 44 97 71</span>`;
+            } else {
+                note.innerHTML = `Effectuez le paiement via <strong>${paymentMethod}</strong> vers le compte officiel Fofana Business : <br><span class="text-base font-extrabold text-brand-gold tracking-wider select-all block my-1">+224 628 44 97 71</span>`;
+            }
+        }
+
+        // SOUMISSION DU FORMULAIRE ET ENVOI WHATSAPP
+        function handleOrderSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('cust-name').value;
+            const code = document.getElementById('cust-country-code').value;
+            const phoneNum = document.getElementById('cust-phone').value;
+            const fullPhone = code + ' ' + phoneNum;
+            const country = document.getElementById('cust-country-name').value;
+            const city = document.getElementById('cust-city').value;
+            const payment = document.getElementById('cust-payment').value;
+
+            const myNumber = "224628449771";
+            const priceText = document.getElementById('modal-product-price').innerText;
+
+            const message = `Bonjour FOFANA BUSINESS ! 🚀%0A%0AJe souhaite valider ma commande :%0A` +
+                `----------------------------------%0A` +
+                `📚 *Formation :* ${currentOrderProduct.title}%0A` +
+                `📦 *Format :* ${currentOrderProduct.chosenFormat.toUpperCase()}%0A` +
+                `💰 *Montant :* ${priceText}%0A` +
+                `----------------------------------%0A` +
+                `👤 *Nom & Prénom :* ${name}%0A` +
+                `📱 *Téléphone / WhatsApp :* ${fullPhone}%0A` +
+                `🌍 *Pays :* ${country}%0A` +
+                `📍 *Ville / Quartier :* ${city}%0A` +
+                `💳 *Moyen de Paiement :* ${payment}%0A` +
+                `----------------------------------%0A` +
+                `J'attends la confirmation du dépôt pour recevoir mes accès. Merci !`;
+
+            const waUrl = `https://wa.me/${myNumber}?text=${message}`;
+
+            window.open(waUrl, '_blank');
+            closeModal();
+        }
+
+        // ACCORDÉON FAQ
+        function toggleFaq(element) {
+            const p = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            p.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // INITIALISATION
+        window.onload = function() {
+            renderProducts();
+        };
+    </script>
+</body>
+</html>
